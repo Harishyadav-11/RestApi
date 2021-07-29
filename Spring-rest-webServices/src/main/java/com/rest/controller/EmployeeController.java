@@ -24,7 +24,7 @@ public class EmployeeController {
 	
 	@Autowired
 	private EmployeeDao repo;
-	//post is used to insert data
+	//post is used to insert data into database
 	@PostMapping("/createEmp")
 	public Emploii createEmployee(@RequestBody Emploii emp) {
 		return repo.save(emp);	
